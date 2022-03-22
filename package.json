@@ -1,0 +1,24 @@
+{
+  "name": "spa",
+  "version": "1.0.0",
+  "description": "spa app",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/folox-12/fd_spa.git"
+  },
+  "bugs": {
+    "url": "https://github.com/folox-12/fd_spa/issues"
+  },
+  "homepage": "https://github.com/folox-12/fd_spa#readme"
+}
