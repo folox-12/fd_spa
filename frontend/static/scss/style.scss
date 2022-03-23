@@ -1,0 +1,22 @@
+@import "_nullstyle";
+@import "_header";
+
+$container_maxw: 1140px;
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	min-height: 100%;
+}
+body {
+	font-family: Montserrat;
+	font-weight: 500;
+	background-color: #f5f7fa;
+}
+
+main {
+	flex: 1 0 auto;
+}
+.container {
+	max-width: $container_maxw;
+	margin: 0px auto;
+}

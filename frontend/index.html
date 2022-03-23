@@ -1,18 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Single Page App</title>
-    <link rel="stylesheet" href="/static/css/index.css">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Single Page App</title>
+	<link rel="stylesheet" href="/static/css/style.css">
 </head>
+
 <body>
-    <nav class="nav">
-        <a href="/" class="nav__link" data-link>Dashboard</a>
-        <a href="/posts" class="nav__link" data-link>Posts</a>
-        <a href="/settings" class="nav__link" data-link>Settings</a>
-    </nav>
-    <div id="app"></div>
-    <script type="module" src="/static/js/index.js"></script>
+	<div class="wrapper">
+		<header class="header">
+			<div class="container">
+				<div class="header__body">
+					<div class="header__row">
+						<div class="header__icon">
+							<img src="static/img/ico/flydrone.svg" alt="#">
+						</div>
+						<nav class="header__menu">
+							<a href="/" data-link>Список площадок</a>
+							<a href="/settings" data-link>Добавить</a>
+						</nav>
+					</div>
+				</div>
+			</div>
+		</header>
+		<main class="main">
+			<div id="app"></div>
+		</main>
+	</div>
+	<script type="module" src="/static/js/index.js"></script>
 </body>
+
 </html>

@@ -1,0 +1,38 @@
+$color-header__link: #141029;
+$fw-header__link: bold;
+.header {
+	&__body {
+		background-color: #fff;
+		padding: 16px 24px;
+	}
+
+	&__row {
+		display: flex;
+		align-items: center;
+		gap: 0 35px;
+	}
+
+	&__icon {
+		min-width: 120px;
+		max-width: 200px;
+		position: relative;
+		height: 51px;
+		img {
+			position: absolute;
+			height: 100%;
+			width: 100%;
+			top: 0;
+			left: 0;
+			object-fit: contain;
+		}
+	}
+
+	&__menu {
+		display: flex;
+		gap: 0 35px;
+		a {
+			font-weight: $fw-header__link;
+			color: $color-header__link;
+		}
+	}
+}
