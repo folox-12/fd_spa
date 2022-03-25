@@ -1,14 +1,15 @@
 import AbstractView from "./AbstractView.js";
 
 export default class extends AbstractView {
-	constructor() {
-		super();
-		this.setTitle("Dashboard");
+	constructor(params) {
+		super(params);
+		this.setTitle("PostSettings");
 	}
 
 	async getHtml() {
+		console.log(this.params.id);
 		return `
-		I am dashboard
+		Post settings
 		`;
 	}
 }
