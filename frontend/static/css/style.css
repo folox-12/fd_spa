@@ -151,9 +151,128 @@ main {
   -webkit-box-flex: 1;
       -ms-flex: 1 0 auto;
           flex: 1 0 auto;
+  margin-top: 83px;
 }
 
 .container {
   max-width: 1140px;
   margin: 0px auto;
+}
+
+.table {
+  background-color: #fff;
+  width: 100%;
+  max-width: 1140px;
+  padding-bottom: 25px;
+}
+
+.table__data {
+  width: 100%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  overflow-x: auto;
+  margin-bottom: 16px;
+}
+
+.table__responsive {
+  width: 100%;
+  overflow-x: auto;
+}
+
+table.table__responsive {
+  min-width: 1140px;
+  border-collapse: collapse;
+}
+
+table.table__responsive th,
+table.table__responsive td {
+  padding: 22px 15px 22px 0px;
+}
+
+table.table__responsive th:first-child,
+table.table__responsive td:first-child {
+  padding-left: 30px;
+}
+
+table.table__responsive th:last-child,
+table.table__responsive td:last-child {
+  padding-right: 30px;
+}
+
+table.table__responsive thead {
+  cursor: pointer;
+}
+
+table.table__responsive thead th {
+  font-weight: bold;
+  padding-bottom: 29px;
+  padding-top: 30px;
+  text-align: left;
+}
+
+table.table__responsive tbody tr:hover {
+  background-color: #ececec;
+  cursor: pointer;
+}
+
+.table-paginator__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.table-paginator__ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 0 4px;
+}
+
+.table-paginator__ul ul {
+  list-style-type: none;
+}
+
+.table-paginator__li {
+  width: 50px;
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  cursor: pointer;
+  border-radius: 100%;
+}
+
+.table-paginator__li:hover {
+  background-color: #f7f7f9;
+}
+
+.table-paginator__li.active {
+  background-color: #f7f7f9;
+  color: #9b42f5;
+}
+
+.table-paginator__total {
+  position: absolute;
+  right: 25px;
+  color: #6d6a7a;
+  font-size: 17px;
+  font-weight: 400;
 }
