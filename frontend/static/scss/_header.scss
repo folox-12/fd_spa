@@ -1,8 +1,10 @@
 $color-header__link: #141029;
 $fw-header__link: bold;
 .header {
+	position: fixed;
+	width: 100%;
+	background-color: #fff;
 	&__body {
-		background-color: #fff;
 		padding: 16px 24px;
 	}
 
