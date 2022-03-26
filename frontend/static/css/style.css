@@ -86,8 +86,13 @@ h6 {
   font-weight: 400;
 }
 
-.header__body {
+.header {
+  position: fixed;
+  width: 100%;
   background-color: #fff;
+}
+
+.header__body {
   padding: 16px 24px;
 }
 
@@ -145,6 +150,10 @@ body {
   font-family: Montserrat;
   font-weight: 500;
   background-color: #f5f7fa;
+}
+
+a:hover {
+  color: #750fd9;
 }
 
 main {
@@ -275,4 +284,53 @@ table.table__responsive tbody tr:hover {
   color: #6d6a7a;
   font-size: 17px;
   font-weight: 400;
+}
+
+.header-page {
+  padding-top: 65px;
+}
+
+.header-page__navigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 30px;
+}
+
+.header-page__title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.header-page__search {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 30px;
+  gap: 0 15px;
+}
+
+.header-page-navigation__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.header-page-navigation__splitter {
+  margin: 0 12px;
+}
+
+.header-page-search__input {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 auto;
+          flex: 1 0 auto;
+}
+
+.header-page-search__input input {
+  width: 100%;
 }

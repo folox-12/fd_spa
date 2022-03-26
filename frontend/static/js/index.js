@@ -1,6 +1,6 @@
-import Dashboard from "./views/LIst.js";
-import Settings from "./views/Settings.js";
-import PostSetting from "./views/PostSetting.js";
+import List from "./views/List.js";
+import Dronoport from "./views/Dronoport.js";
+
 const pathToRegex = path => RegExp("^" + path.replace(/\//g, "\\/").replace(/:\w+/g, "(.+)") + "$")
 
 const getParams = match => {
@@ -18,9 +18,8 @@ const navigateTo = url => {
 
 const router = async () => {
 	const routes = [
-		{ path: '/', view: Dashboard },
-		{ path: '/settings', view: Settings },
-		{ path: '/settings/:id', view: PostSetting }
+		{ path: '/', view: List },
+		{ path: '/dronoport', view: Dronoport },
 	];
 
 	const potentialMatches = routes.map(route => {

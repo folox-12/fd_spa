@@ -1,0 +1,45 @@
+.header-page {
+	padding-top: 65px;
+	&__navigation {
+		display: flex;
+		margin-bottom: 30px;
+	}
+
+	&__title {
+		display: flex;
+		justify-content: space-between;
+		margin-bottom: 30px;
+	}
+
+	&__button {
+	}
+
+	&__search {
+		display: flex;
+		margin-bottom: 30px;
+		gap: 0 15px;
+	}
+}
+.header-page-navigation {
+	&__item {
+		display: flex;
+	}
+
+	&__link {
+	}
+
+	&__splitter {
+		margin: 0 12px;
+	}
+}
+.header-page-search {
+	&__input {
+		flex: 1 0 auto;
+		input {
+			width: 100%;
+		}
+	}
+
+	&__buttons {
+	}
+}
