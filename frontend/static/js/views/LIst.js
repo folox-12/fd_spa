@@ -20,19 +20,28 @@ export default class extends AbstractView {
 				</div>
 			</div>
 		</nav>
+		<div class = "header-page__mainblok">
 		<div class="header-page__title">
 			<h1>Список посадочных площадок</h1>
 			<div class="header-page__button">
-				<a href='#'>Добавить</a>
+				<button class="btn">Применить</button>
 			</div>
-		</div>
+			</div>
 		<div class="header-page__search header-page-search">
 			<div class="header-page-search__input">
-				<input type="text" placeholder = "Поиск по адресу">
+			<img src = "static/img/ico/search.svg" alt="" class = "search-icon">
+			<input type="text" placeholder = "Какой-то поиск" id = "input-main" >
+			<button class="clear-input" id = "clear-input">
+			<img src="static/img/ico/close.svg"  alt="" class = "filter-icon" >
+			</button>
 			</div>
 			<div class="header-page-search__buttons">
-				<button>+</button>
-				<button>-</button>
+			<button  class = "filter"  id ="button_filter">
+			<img src="static/img/ico/filter.svg"  alt="" class = "filter-icon" >
+		</button>
+		<button  class = "filter"  id ="button_filter">
+		<img src="static/img/ico/settings.svg"  alt="" class = "filter-icon" >
+	</button>
 			</div>
 		</div>
 	</div>

@@ -1,3 +1,4 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
 * {
   padding: 0;
   margin: 0;
@@ -111,6 +112,7 @@ h6 {
   max-width: 200px;
   position: relative;
   height: 51px;
+  cursor: pointer;
 }
 
 .header__icon img {
@@ -131,8 +133,14 @@ h6 {
 }
 
 .header__menu a {
-  font-weight: bold;
-  color: #141029;
+  font-size: 16px;
+  line-height: 1.75;
+  font-family: "Montserrat-medium", sans-serif;
+  font-weight: 500;
+  color: rgba(20, 16, 41, 0.8);
+  cursor: pointer;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
 }
 
 .wrapper {
@@ -304,7 +312,30 @@ table.table__responsive tbody tr:hover {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin-bottom: 30px;
+}
+
+.header-page__title h1 {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+  color: #141029;
+}
+
+.header-page__button button {
+  background: -webkit-gradient(linear, left top, right top, color-stop(3.2%, #0094ff), color-stop(73.28%, #9b42f5));
+  background: linear-gradient(90deg, #0094ff 3.2%, #9b42f5 73.28%);
+  color: white;
+  height: 48px;
+  min-width: 200px;
+  font-family: "Montserrat", serif;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  -webkit-transition: 0.5s;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
 
 .header-page__search {
@@ -321,16 +352,118 @@ table.table__responsive tbody tr:hover {
   display: flex;
 }
 
+.header-page-navigation__link a {
+  font-family: 'Montserrat';
+  font-style: bold;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  color: #141029;
+  text-decoration: none;
+}
+
 .header-page-navigation__splitter {
   margin: 0 12px;
+  font-family: 'Montserrat';
+  font-style: bold;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  color: #141029;
+  text-decoration: none;
+}
+
+.header-page-search {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 15px;
+  margin-top: 30px;
 }
 
 .header-page-search__input {
+  height: auto;
+  width: 70%;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: end;
+  gap: 10px;
+  -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+          filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
   -webkit-box-flex: 1;
       -ms-flex: 1 0 auto;
           flex: 1 0 auto;
 }
 
-.header-page-search__input input {
-  width: 100%;
+.header-page-search__input .search-icon {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  pointer-events: none;
+  top: 1.4rem;
+  padding-left: 21px;
 }
+
+.header-page-search__input input {
+  height: 100%;
+  width: 100%;
+  background-color: #f7f7f9;
+  padding-left: 5px;
+  padding: 15px 0px 15px 55px;
+  border: none;
+  margin-right: 0px;
+  border-radius: 10px;
+}
+
+.header-page-search__input input:focus {
+  border-bottom: 2px solid #0c0c0c;
+  padding: 15px 0px 13px 55px;
+}
+
+.header-page-search__input button {
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  top: 1.3rem;
+  padding-right: 15px;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.header-page-search__input button .material-icons {
+  color: #6d6a7a;
+  background-color: #f7f7f9;
+}
+
+.header-page-search__buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 15px;
+}
+
+.header-page-search__buttons button {
+  position: relative;
+  max-width: 100%;
+  height: auto;
+  padding: 15px 15px;
+  background: rgba(254, 254, 255, 0.5);
+  -webkit-box-shadow: 2px 4px 20px rgba(3, 3, 3, 0.1);
+          box-shadow: 2px 4px 20px rgba(3, 3, 3, 0.1);
+  border-radius: 10px;
+}
+/*# sourceMappingURL=style.css.map */
