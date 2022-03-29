@@ -8,10 +8,30 @@
 	&__title {
 		display: flex;
 		justify-content: space-between;
-		margin-bottom: 30px;
+		h1{
+			font-family: 'Montserrat';
+			font-style: normal;
+			font-weight: 700;
+			font-size: 24px;
+			line-height: 29px;
+			color: #141029;
+		}
 	}
 
-	&__button {
+	&__button{
+   button{
+	background: linear-gradient(90deg, #0094ff 3.2%, #9b42f5 73.28%);
+    color: white;
+    height: 48px;
+    min-width: 200px;
+    font-family: "Montserrat", serif;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    -webkit-transition: 0.5s;
+    transition: all 0.5s ease;
+   
+   }
 	}
 
 	&__search {
@@ -26,20 +46,104 @@
 	}
 
 	&__link {
+		a{		font-family: 'Montserrat';
+		font-style: bold;
+		font-weight: 400;
+		font-size: 18px;
+		line-height: 22px;
+		color: #141029;
+		text-decoration: none;
+		}
 	}
 
 	&__splitter {
 		margin: 0 12px;
+		font-family: 'Montserrat';
+		font-style: bold;
+		font-weight: 400;
+		font-size: 18px;
+		line-height: 22px;
+		color: #141029;
+		text-decoration: none;
 	}
 }
 .header-page-search {
+	
+	    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 15px;
+	margin-top:30px;
+
+	
 	&__input {
+		height: auto;
+		width: 70%;
+		position: relative;
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-align: center;
+		-ms-flex-align: center;
+		align-items: center;
+		-webkit-box-pack: end;
+		-ms-flex-pack: end;
+		justify-content: end;
+		gap: 10px;
+		filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 		flex: 1 0 auto;
+		.search-icon{
+			
+			position: absolute;
+    left: 0px;
+    top: 0px;
+    pointer-events: none;
+    top: 1.4rem;
+    padding-left: 21px;
+			
+		}
 		input {
+			 height: 100%;
 			width: 100%;
+			background-color: #f7f7f9;
+			padding-left: 5px;
+			padding: 15px 0px 15px 55px;
+			border: none;
+			margin-right: 0px;
+			border-radius: 10px;
+		}
+		input:focus{
+			border-bottom: 2px solid rgb(12, 12, 12);
+			padding:15px 0px 13px 55px;
+		}
+		button{
+			position: absolute;
+			right: 0px;
+			top: 0px;
+			top: 1.3rem;
+			padding-right: 15px;
+			background-color: transparent;
+			cursor: pointer;
+			.material-icons{
+				color: #6d6a7a;
+				background-color: #f7f7f9;
+			}
 		}
 	}
 
 	&__buttons {
+		display: flex;
+		gap:15px;
+		
+		button{
+			position: relative;
+    max-width: 100%;
+    height: auto;
+    padding: 15px 15px;
+    background: rgba(254, 254, 255, 0.5);
+    box-shadow: 2px 4px 20px rgba(3, 3, 3, 0.1);
+    border-radius: 10px;
+	
+		}
 	}
 }
