@@ -1,7 +1,34 @@
 import AbstractView from "./AbstractView.js";
 import { createTable } from "../components/Table.js";
 
-
+let data = {
+	'TableColumns': {
+		numerical: '№',
+		address: 'Адресс',
+		dronopot: 'Дронопорт',
+		postamat: 'Постамат',
+	},
+	'TableDataItems': [
+		{
+			id: 'place',
+			address: 'г. Одинцово, ул. Северная, 4',
+			dronopot: 1,
+			postamat: 1,
+		},
+		{
+			id: 'place1',
+			address: 'г. Одинцово, ул. Северная, 3',
+			dronopot: 2,
+			postamat: 3,
+		},
+		{
+			id: 'place1',
+			address: 'г. Одинцово, ул. Северная, 100',
+			dronopot: 5,
+			postamat: 111,
+		},
+	],
+};
 
 export default class extends AbstractView {
 	constructor() {
@@ -39,30 +66,8 @@ export default class extends AbstractView {
 			</div>
 		</div>
 	</div>
-	${createTable(
-			{
-				'TableColumns': {
-					numerical: '№',
-					address: 'Адресс',
-					dronopot: 'Дронопорт',
-					postamat: 'Постамат',
-				},
-				'TableDataItems': [
-					{
-						id: 'place',
-						address: 'г. Одинцово, ул. Северная, 4',
-						dronopot: 1,
-						postamat: 1,
-					},
-					{
-						id: 'place1',
-						address: 'г. Одинцово, ул. Северная, 3',
-						dronopot: 2,
-						postamat: 3,
-					},
-				],
+	${createTable(data)
 			}
-		)}
 		`;
 	}
 }
