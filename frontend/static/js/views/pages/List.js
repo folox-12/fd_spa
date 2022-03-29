@@ -15,18 +15,6 @@ let data = {
 			dronopot: 1,
 			postamat: 1,
 		},
-		{
-			id: 'place1',
-			address: 'г. Одинцово, ул. Северная, 3',
-			dronopot: 2,
-			postamat: 3,
-		},
-		{
-			id: 'place1',
-			address: 'г. Одинцово, ул. Северная, 100',
-			dronopot: 5,
-			postamat: 111,
-		},
 	],
 };
 
