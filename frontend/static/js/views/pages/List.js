@@ -1,4 +1,22 @@
 import AbstractView from "./AbstractView.js";
+import { createTable } from "../components/Table.js";
+
+let data = {
+	'TableColumns': {
+		numerical: '№',
+		address: 'Адресс',
+		dronopot: 'Дронопорт',
+		postamat: 'Постамат',
+	},
+	'TableDataItems': [
+		{
+			id: 'place',
+			address: 'г. Одинцово, ул. Северная, 4',
+			dronopot: 1,
+			postamat: 1,
+		},
+	],
+};
 
 export default class extends AbstractView {
 	constructor() {
@@ -45,6 +63,7 @@ export default class extends AbstractView {
 			</div>
 		</div>
 	</div>
+<<<<<<< HEAD:frontend/static/js/views/LIst.js
 
 	<div class = "main-block">
 
@@ -144,6 +163,10 @@ export default class extends AbstractView {
 	</div>
 
 
+=======
+	${createTable(data)
+			}
+>>>>>>> main:frontend/static/js/views/pages/List.js
 		`;
 	}
 }

@@ -1,5 +1,5 @@
-import List from "./views/List.js";
-import Dronoport from "./views/Dronoport.js";
+import List from "./views/pages/List.js";
+import Dronoport from "./views/pages/Dronoport.js";
 
 const pathToRegex = path => RegExp("^" + path.replace(/\//g, "\\/").replace(/:\w+/g, "(.+)") + "$")
 
