@@ -29,8 +29,13 @@
     border-radius: 10px;
     cursor: pointer;
     -webkit-transition: 0.5s;
-    transition: all 0.5s ease;
+    transition: all .2s;
    
+   }
+   button:hover{
+	transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+	color: rgba(255, 255, 255, 0.6);
    }
 	}
 

@@ -3,9 +3,11 @@ $fw-header__link: bold;
 .header {
 	position: fixed;
 	width: 100%;
-	background-color: #fff;
+	z-index: 1000;
+
 	&__body {
 		padding: 16px 24px;
+		background-color: #fff;
 	}
 
 	&__row {
