@@ -19,7 +19,7 @@
 						</div>
 						<nav class="header__menu">
 							<a href="/" data-link>Список площадок</a>
-							<a href="#">Добавить</a>
+							<a href="/dronoport" data-link>Добавить</a>
 						</nav>
 					</div>
 				</div>
@@ -30,6 +30,54 @@
 		</main>
 	</div>
 	<script type="module" src="/static/js/index.js"></script>
+	<script src="/static/js/jquery-3.6.0.min.js"></script>
 </body>
+<script>
+	$(document).ready(function(){
+	$('button.filter').click(function(){
+		$('div.dropdown-content').slideToggle(230);  
+            // $('.show').css("display", "block");    
+		return false;
+	});
+});
+$(document).ready(function(){
+	$('button .close-svg').click(function(){
+		$('div.dropdown-content').slideToggle(230);  
+            // $('.show').css("display", "block");    
+		return false;
+	});
+});
 
+$(document).ready(function(){
+	const two = '/static/img/ico/filter.svg';
+    const one = '/static/img/ico/filter-active.svg';
+
+    $('#button_filter').on('click', toggle);
+	$('button .close-svg').on('click', toggle);
+
+    function toggle() {
+      const current = $('.filter-icon').attr('src');
+      $('.filter-icon').attr('src', current === one ? two : one);
+    }
+  });
+	function clearInput(){
+	 
+		document.getElementById("input-main").value = "";
+	  }
+	  $(document).ready(function(){
+    $('.spoiler__title').click(function(event){
+      if($('.spoiler-main').hasClass('one')){
+        $('.spoiler__title').not($(this)).removeClass('active');
+        $('.spoiler__content').not($(this).next()).slideUp(300);
+      }
+      $(this).toggleClass('active').next().slideToggle(300);
+
+    });
+  });
+ 
+function clearInput1(){
+	 
+	 document.getElementById("input-filter").value = "";
+   }
+	</script>
 </html>
