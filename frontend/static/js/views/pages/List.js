@@ -15,7 +15,7 @@ let data = {
 			dronopot: 1,
 			postamat: 1,
 		},
-	],
+	]
 };
 
 export default class extends AbstractView {
@@ -63,8 +63,6 @@ export default class extends AbstractView {
 			</div>
 		</div>
 	</div>
-<<<<<<< HEAD:frontend/static/js/views/LIst.js
-
 	<div class = "main-block">
 
 	<div class="filter-block">
@@ -127,26 +125,9 @@ export default class extends AbstractView {
 		</div>
 	</div>
 		<div class="table">
-		<div class="table__data">
-			<table class="table__responsive">
-				<thead>
-					<tr class="table-title">
-						<th>№</th>
-						<th>Адрес</th>
-						<th>Дронопорт</th>
-						<th>Постамат</th>
-					</tr>
-				</thead>
-				<tbody>
-					<tr class="table-el">
-						<td class="table-numerical">1</td>
-						<td class="table-address">г. Одинцово, ул. Северная, 4</td>
-						<td class="table-dronport">0</td>
-						<td class="table-postamat">1</td>
-					</tr>
-				</tbody>
-			</table>
-		</div>
+		${createTable(data)
+			}
+
 		<div class="table__paginator table-paginator">
 			<div class="table-paginator__row">
 				<div class="table-paginator__ul">
@@ -155,18 +136,14 @@ export default class extends AbstractView {
 					<li class="table-paginator__li">3</li>
 				</div>
 				<div class="table-paginator__total">
-					<span>Найдено всего 11</span>
+					<span>Найдено всего ${Object.entries(data)[1][1].length}</span>
 				</div>
 			</div>
 		</div>
-	</div>
-	</div>
+	</div >
+	</div >
 
+	`;
 
-=======
-	${createTable(data)
-			}
->>>>>>> main:frontend/static/js/views/pages/List.js
-		`;
 	}
 }
