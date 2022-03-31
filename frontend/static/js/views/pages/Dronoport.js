@@ -1,6 +1,19 @@
 import AbstractView from "./AbstractView.js";
-
-
+import { createTable } from "../components/Table.js";
+let data = {
+	'TableColumns': {
+		numerical: '№',
+		name: 'Наименование',
+		manufacture: 'Модуль',
+	},
+	'TableDataItems': [
+		{
+			id: 'place',
+			name: 'DJI',
+			manufacture: 'Модуль WIFI',
+		},
+	]
+};
 export default class extends AbstractView {
 	constructor(params) {
 		super(params);
@@ -101,6 +114,7 @@ export default class extends AbstractView {
                             <div class="modulesBox">
                                 <div class="modulesBox__title">
                                     <h2>Оснащение</h2> 
+									${createTable(data)}
                                 </div>
                                 
                             </div>
