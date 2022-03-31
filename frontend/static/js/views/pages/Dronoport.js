@@ -29,6 +29,7 @@ export default class extends AbstractView {
 						<a href="/">Главная</a>
 					</div>
 				<div class="header-page-navigation__splitter">
+				>
 				</div>
 			</div>
 		</nav>
