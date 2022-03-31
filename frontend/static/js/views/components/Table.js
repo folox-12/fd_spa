@@ -7,15 +7,19 @@ export let createTable = (data) => {
 		column += `<th>${data['TableColumns'][key]}</th>`
 	}
 	let count_rows = 1;
-	for (let { address, dronopot, postamat } of data['TableDataItems']) {
+	data['TableDataItems'].forEach(element => {
 		rows += `<tr class="table-el">`
 		rows += `<td class="table-numerical">${count_rows}</td>`
-		rows += `<td class="table-address">${address}</td>`
-		rows += `<td class="table-dronoport">${dronopot}</td>`
-		rows += `<td class="table-postamat">${postamat}</td>`
+		for (let el in element) {
+			if (el != "id") {
+				rows += `<td class="table-address">${element[el]}</td>`
+			}
+
+		}
 		rows += `</tr>`
 		count_rows++
-	}
+	});
+
 
 	table = `
 				<section class = "table">
