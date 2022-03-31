@@ -12,7 +12,7 @@ let data = {
 		{
 			id: 'place',
 			address: 'г. Одинцово, ул. Северная, 4',
-			dronopot: 1,
+			dronopot: 2,
 			postamat: 1,
 		},
 	]
@@ -63,6 +63,7 @@ export default class extends AbstractView {
 			</div>
 		</div>
 	</div>
+
 	<div class = "main-block">
 
 	<div class="filter-block">
@@ -124,6 +125,7 @@ export default class extends AbstractView {
 		</div>
 		</div>
 	</div>
+
 		<div class="table">
 		${createTable(data)
 			}
@@ -144,6 +146,5 @@ export default class extends AbstractView {
 	</div >
 
 	`;
-
 	}
 }
