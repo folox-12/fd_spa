@@ -15,7 +15,7 @@ let data = {
 			dronopot: 2,
 			postamat: 1,
 		},
-	],
+	]
 };
 
 export default class extends AbstractView {
@@ -63,7 +63,6 @@ export default class extends AbstractView {
 			</div>
 		</div>
 	</div>
-
 
 	<div class = "main-block">
 
@@ -126,13 +125,26 @@ export default class extends AbstractView {
 		</div>
 		</div>
 	</div>
-		
-	
 
-
-	${createTable(data)
+		<div class="table">
+		${createTable(data)
 			}
 
-		`;
+		<div class="table__paginator table-paginator">
+			<div class="table-paginator__row">
+				<div class="table-paginator__ul">
+					<li class="table-paginator__li active">1</li>
+					<li class="table-paginator__li">2</li>
+					<li class="table-paginator__li">3</li>
+				</div>
+				<div class="table-paginator__total">
+					<span>Найдено всего ${Object.entries(data)[1][1].length}</span>
+				</div>
+			</div>
+		</div>
+	</div >
+	</div >
+
+	`;
 	}
 }
