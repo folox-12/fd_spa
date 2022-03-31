@@ -438,7 +438,7 @@ hr {
 }
 
 .checkbox__input:checked + .chechbox__label:before {
-  background-color: #750fd9;
+  background-color: #9B42F5;
   border-radius: 3px;
 }
 

@@ -12,7 +12,7 @@ let data = {
 		{
 			id: 'place',
 			address: 'г. Одинцово, ул. Северная, 4',
-			dronopot: 1,
+			dronopot: 2,
 			postamat: 1,
 		},
 	],
